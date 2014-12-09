@@ -1,0 +1,21 @@
+{
+  "name": "whatstoeat",
+  "version": "0.1.0",
+  "authors": [
+    "pcsandford <petersandford1982@gmail.com>"
+  ],
+  "description": "Template showing location and directions to local places to eat.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.1",
+    "google-sheets": "GoogleWebComponents/google-sheets#master",
+    "google-map": "GoogleWebComponents/google-map#master"
+  }
+}
