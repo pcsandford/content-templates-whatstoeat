@@ -176,7 +176,9 @@ body {
       transform-style: preserve-3d; }
     .wrapper .cardArea .flipped {
       -webkit-transform: rotateY(180deg);
-      transform: rotateY(180deg); }
+      transform: rotateY(180deg);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
     .wrapper .cardArea .front {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
@@ -204,9 +206,10 @@ body {
       top: 0;
       background: url(../assets/images/heartGrey.png);
       background-repeat: no-repeat;
-      background-position: 80% 40%; }
-    .wrapper .cardArea .visible {
-      display: none; }
+      background-position: 80% 40%;
+      opacity: 1;
+      -webkit-transition: all 0.3s;
+              transition: all 0.3s; }
     .wrapper .cardArea .liked {
       background: url(../assets/images/heartRed.png);
       background-repeat: no-repeat;
@@ -285,8 +288,14 @@ body {
   .wrapper .mapArea {
     width: 45vw;
     height: 72vh;
-    background: url("../assets/images/mapTemp.png");
     position: absolute;
     right: 1vw;
     top: 27vh;
     border-radius: 5px; }
+    .wrapper .mapArea google-map {
+      width: 45vw;
+      height: 72vh;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 5px; }
