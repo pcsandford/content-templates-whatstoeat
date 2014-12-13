@@ -139,20 +139,314 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Quicksand", "Lato", sans-serif; }
 
+@-webkit-keyframes background1Clear {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 0; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes background1Clear {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 0; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes background2Clear {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes background2Clear {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes background3Clear {
+  0% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes background3Clear {
+  0% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes focus {
+  0% {
+    box-shadow: -64px -59px 0 0 white, -66px -61px 0 0 black, 64px -59px 0 0 white, 66px -61px 0 0 black, -64px 70px 0 0 white, -66px 72px 0 0 black, 64px 70px 0 0 white, 66px 72px 0 0 black; }
+  100% {
+    box-shadow: -67px -62px 0 0 white, -69px -64px 0 0 black, 67px -62px 0 0 white, 69px -64px 0 0 black, -67px 73px 0 0 white, -69px 75px 0 0 black, 67px 73px 0 0 white, 69px 75px 0 0 black; } }
+@keyframes focus {
+  0% {
+    box-shadow: -64px -59px 0 0 white, -66px -61px 0 0 black, 64px -59px 0 0 white, 66px -61px 0 0 black, -64px 70px 0 0 white, -66px 72px 0 0 black, 64px 70px 0 0 white, 66px 72px 0 0 black; }
+  100% {
+    box-shadow: -67px -62px 0 0 white, -69px -64px 0 0 black, 67px -62px 0 0 white, 69px -64px 0 0 black, -67px 73px 0 0 white, -69px 75px 0 0 black, 67px 73px 0 0 white, 69px 75px 0 0 black; } }
+@-webkit-keyframes focusTR {
+  0% {
+    top: 5.2vh;
+    right: 1.4vw; }
+  5% {
+    top: 5.2vh;
+    right: 1.4vw; }
+  25% {
+    opacity: 0; }
+  50% {
+    top: 0vh;
+    right: 0vw;
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  95% {
+    top: 5.2vh;
+    right: 1.4vw; }
+  100% {
+    top: 5.2vh;
+    right: 1.4vw; } }
+@keyframes focusTR {
+  0% {
+    top: 5.2vh;
+    right: 1.4vw; }
+  5% {
+    top: 5.2vh;
+    right: 1.4vw; }
+  25% {
+    opacity: 0; }
+  50% {
+    top: 0vh;
+    right: 0vw;
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  95% {
+    top: 5.2vh;
+    right: 1.4vw; }
+  100% {
+    top: 5.2vh;
+    right: 1.4vw; } }
+@-webkit-keyframes focusBR {
+  0% {
+    bottom: 3.6vh;
+    right: 1.4vw; }
+  5% {
+    bottom: 3.6vh;
+    right: 1.4vw; }
+  25% {
+    opacity: 0; }
+  50% {
+    bottom: 0vh;
+    right: 0vw;
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  95% {
+    bottom: 3.6vh;
+    right: 1.4vw; }
+  100% {
+    bottom: 3.6vh;
+    right: 1.4vw; } }
+@keyframes focusBR {
+  0% {
+    bottom: 3.6vh;
+    right: 1.4vw; }
+  5% {
+    bottom: 3.6vh;
+    right: 1.4vw; }
+  25% {
+    opacity: 0; }
+  50% {
+    bottom: 0vh;
+    right: 0vw;
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  95% {
+    bottom: 3.6vh;
+    right: 1.4vw; }
+  100% {
+    bottom: 3.6vh;
+    right: 1.4vw; } }
+@-webkit-keyframes focusBL {
+  0% {
+    bottom: 3.6vh;
+    left: 1.4vw; }
+  5% {
+    bottom: 3.6vh;
+    left: 1.4vw; }
+  25% {
+    opacity: 0; }
+  50% {
+    bottom: 0vh;
+    left: 0vw;
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  95% {
+    bottom: 3.6vh;
+    left: 1.4vw; }
+  100% {
+    bottom: 3.6vh;
+    left: 1.4vw; } }
+@keyframes focusBL {
+  0% {
+    bottom: 3.6vh;
+    left: 1.4vw; }
+  5% {
+    bottom: 3.6vh;
+    left: 1.4vw; }
+  25% {
+    opacity: 0; }
+  50% {
+    bottom: 0vh;
+    left: 0vw;
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  95% {
+    bottom: 3.6vh;
+    left: 1.4vw; }
+  100% {
+    bottom: 3.6vh;
+    left: 1.4vw; } }
+@-webkit-keyframes focusTL {
+  0% {
+    top: 5.2vh;
+    left: 1.4vw; }
+  5% {
+    top: 5.2vh;
+    left: 1.4vw; }
+  25% {
+    opacity: 0; }
+  50% {
+    top: 0vh;
+    left: 0vw;
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  95% {
+    top: 5.2vh;
+    left: 1.4vw; }
+  100% {
+    top: 5.2vh;
+    left: 1.4vw; } }
+@keyframes focusTL {
+  0% {
+    top: 5.2vh;
+    left: 1.4vw; }
+  5% {
+    top: 5.2vh;
+    left: 1.4vw; }
+  25% {
+    opacity: 0; }
+  50% {
+    top: 0vh;
+    left: 0vw;
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  95% {
+    top: 5.2vh;
+    left: 1.4vw; }
+  100% {
+    top: 5.2vh;
+    left: 1.4vw; } }
+@-webkit-keyframes scan {
+  0% {
+    opacity: 0;
+    bottom: 5vh; }
+  3% {
+    opacity: 1;
+    bottom: 5vh; }
+  19% {
+    opacity: 1;
+    bottom: 27vh; }
+  22% {
+    opacity: 0;
+    bottom: 27vh; }
+  100% {
+    opacity: 0;
+    bottom: 5vh; } }
+@keyframes scan {
+  0% {
+    opacity: 0;
+    bottom: 5vh; }
+  3% {
+    opacity: 1;
+    bottom: 5vh; }
+  19% {
+    opacity: 1;
+    bottom: 27vh; }
+  22% {
+    opacity: 0;
+    bottom: 27vh; }
+  100% {
+    opacity: 0;
+    bottom: 5vh; } }
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background: #555;
+  background: transparent;
   position: relative;
-  z-index: 0;
-  background: -webkit-radial-gradient(#3498DB, #6BB9F0);
-  background: radial-gradient(#3498DB, #6BB9F0); }
+  opacity: 1;
+  z-index: 0; }
+  .wrapper .background1 {
+    width: 100vw;
+    height: 100vh;
+    background: -webkit-radial-gradient(#D64541, #96281B);
+    background: radial-gradient(#D64541, #96281B);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: -1;
+    -webkit-animation: background1Clear 30s ease-in-out infinite;
+            animation: background1Clear 30s ease-in-out infinite; }
+  .wrapper .background2 {
+    width: 100vw;
+    height: 100vh;
+    background: -webkit-radial-gradient(#3498DB, #38539B);
+    background: radial-gradient(#3498DB, #38539B);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: -2;
+    -webkit-animation: background2Clear 30s ease-in-out infinite;
+            animation: background2Clear 30s ease-in-out infinite; }
+  .wrapper .background3 {
+    width: 100vw;
+    height: 100vh;
+    background: -webkit-radial-gradient(#BF55EC, #8E44AD);
+    background: radial-gradient(#BF55EC, #8E44AD);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: -3;
+    -webkit-animation: background3Clear 30s ease-in-out infinite;
+            animation: background3Clear 30s ease-in-out infinite; }
   .wrapper h1 {
-    font-weight: 700;
     color: white;
-    font-size: 12vw;
+    font-family: "Lato";
+    font-weight: 700;
+    letter-spacing: 0.5vw;
+    font-size: 11.5vw;
     text-align: center;
     margin: 0; }
   .wrapper .cardArea {
@@ -196,6 +490,85 @@ body {
       background: white;
       position: absolute;
       border-radius: 5px; }
+    .wrapper .cardArea .scanInstructions {
+      margin-top: 1vh;
+      z-index: 3;
+      font-size: 1.2vw;
+      font-weight: 400; }
+    .wrapper .cardArea .topRightCorner {
+      width: 25px;
+      height: 25px;
+      border-top: 3px solid #52B3D9;
+      border-right: 3px solid #52B3D9;
+      position: absolute;
+      right: 1.4vw;
+      top: 5.2vh;
+      opacity: 1;
+      -webkit-animation: focusTR 4s linear infinite;
+              animation: focusTR 4s linear infinite; }
+    .wrapper .cardArea .btmRightCorner {
+      width: 25px;
+      height: 25px;
+      border-bottom: 3px solid #52B3D9;
+      border-right: 3px solid #52B3D9;
+      position: absolute;
+      right: 1.4vw;
+      bottom: 3.6vh;
+      opacity: 1;
+      -webkit-animation: focusBR 4s linear infinite;
+              animation: focusBR 4s linear infinite; }
+    .wrapper .cardArea .btmLeftCorner {
+      width: 25px;
+      height: 25px;
+      border-bottom: 3px solid #52B3D9;
+      border-left: 3px solid #52B3D9;
+      position: absolute;
+      left: 1.4vw;
+      bottom: 3.6vh;
+      opacity: 1;
+      -webkit-animation: focusBL 4s linear infinite;
+              animation: focusBL 4s linear infinite; }
+    .wrapper .cardArea .topLeftCorner {
+      width: 25px;
+      height: 25px;
+      border-top: 3px solid #52B3D9;
+      border-left: 3px solid #52B3D9;
+      position: absolute;
+      left: 1.4vw;
+      top: 5.2vh;
+      opacity: 1;
+      -webkit-animation: focusTL 4s linear infinite;
+              animation: focusTL 4s linear infinite; }
+    .wrapper .cardArea .scanbar {
+      position: absolute;
+      width: 12vw;
+      height: 0.5vh;
+      border-radius: 5px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      bottom: 5vh;
+      background: red;
+      z-index: 30;
+      -webkit-animation: scan 10s ease-in-out infinite;
+              animation: scan 10s ease-in-out infinite; }
+    .wrapper .cardArea .QRcode {
+      position: absolute;
+      left: 50%;
+      top: 5%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      z-index: 10; }
+    .wrapper .cardArea .webAddress {
+      position: absolute;
+      left: 50%;
+      bottom: 3%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      font-weight: 300; }
     .wrapper .cardArea p {
       margin: 0; }
     .wrapper .cardArea .heartArea {
@@ -218,12 +591,12 @@ body {
       width: 100%;
       height: 20px;
       font-size: 1.8vw;
-      font-weight: 800;
+      font-weight: 700;
       margin: -1vh 0 1vh 0; }
     .wrapper .cardArea .type {
       width: 100%;
       height: 20px;
-      font-weight: 700;
+      font-weight: 400;
       margin: 0; }
     .wrapper .cardArea .location {
       width: 100%;
@@ -278,11 +651,12 @@ body {
     width: 50vw;
     height: 12vh;
     margin-left: 1vw;
+    margin-top: 3vh;
     float: left;
     text-align: center; }
     .wrapper .cardInstructions h2 {
       color: white;
-      font-weight: 700;
+      font-weight: 400;
       margin: 0;
       font-size: 2.5vw; }
   .wrapper .mapArea {
@@ -291,7 +665,9 @@ body {
     position: absolute;
     right: 1vw;
     top: 27vh;
-    border-radius: 5px; }
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: -5vh; }
     .wrapper .mapArea google-map {
       width: 45vw;
       height: 72vh;
