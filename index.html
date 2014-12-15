@@ -19,7 +19,9 @@
   <meta property="og:image" content=""/>
   <meta property="og:description" content="A dynamic interactive template that displays local places to eat and provides directions to the user both visually on the display and through a QR code to their mobile device"/>
   <link rel="stylesheet" href="css/styles.css"/>
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800" rel="stylesheet" type="text/css"/><!--Web Components-->    
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:700,900' rel='stylesheet' type='text/css'>
+  <!--Web Components-->    
   <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
   <link rel="import" href="bower_components/google-sheets/google-sheets.html"/>
   <link rel="import" href="bower_components/google-map/google-map.html"/>
@@ -27,6 +29,9 @@
   <link rel="import" href="bower_components/polymer/polymer.html"/>
 </head>
 <div class="wrapper">
+  <div class="background1"></div>
+  <div class="background2"></div>
+  <div class="background3"></div>
   <h1>WHAT'S TO EAT?</h1>
 
   <div class="cardArea">
@@ -46,8 +51,15 @@
         </div>
       </div>
       <div class="back">
-        <img src="assets/images/gusto101.png"/>
-        <p>www.example.com</p>
+        <p class="scanInstructions">Scan here for directions</p>
+        <div class="codeBorder"></div>
+        <img class="QRcode" src="assets/images/gusto101.png"/>
+        <div class="topRightCorner"></div>
+        <div class="btmRightCorner"></div>
+        <div class="btmLeftCorner"></div>
+        <div class="topLeftCorner"></div>
+        <div class="scanbar"></div>
+        <p class="webAddress">www.example.com</p>
       </div>
     </div>
 
@@ -66,8 +78,15 @@
         </div>
       </div>
       <div class="back">
-        <img src="assets/images/aroma.png"/>
-        <p>www.example.com</p>
+        <p class="scanInstructions">Scan here for directions</p>
+        <div class="codeBorder"></div>
+        <img class="QRcode" src="assets/images/aroma.png"/>
+        <div class="topRightCorner"></div>
+        <div class="btmRightCorner"></div>
+        <div class="btmLeftCorner"></div>
+        <div class="topLeftCorner"></div>
+        <div class="scanbar"></div>
+        <p class="webAddress">www.example.com</p>
       </div>
     </div>
 
@@ -86,8 +105,15 @@
         </div>
       </div>
       <div class="back">
-        <img src="assets/images/pandl.png"/>
-        <p>www.example.com</p>
+        <p class="scanInstructions">Scan here for directions</p>
+        <div class="codeBorder"></div>
+        <img class="QRcode" src="assets/images/pandl.png"/>
+        <div class="topRightCorner"></div>
+        <div class="btmRightCorner"></div>
+        <div class="btmLeftCorner"></div>
+        <div class="topLeftCorner"></div>
+        <div class="scanbar"></div>
+        <p class="webAddress">www.example.com</p>
       </div>
     </div>
 
@@ -106,8 +132,15 @@
         </div>
       </div>
       <div class="back">
-        <img src="assets/images/legourmand.png"/>
-        <p>www.example.com</p>
+        <p class="scanInstructions">Scan here for directions</p>
+        <div class="codeBorder"></div>
+        <img class="QRcode" src="assets/images/legourmand.png"/>
+        <div class="topRightCorner"></div>
+        <div class="btmRightCorner"></div>
+        <div class="btmLeftCorner"></div>
+        <div class="topLeftCorner"></div>
+        <div class="scanbar"></div>
+        <p class="webAddress">www.example.com</p>
       </div>
     </div>
 
@@ -126,8 +159,15 @@
         </div>
       </div>
       <div class="back">
-        <img src="assets/images/tone.png"/>
-        <p>www.example.com</p>
+        <p class="scanInstructions">Scan here for directions</p>
+        <div class="codeBorder"></div>
+        <img class="QRcode" src="assets/images/tone.png"/>
+        <div class="topRightCorner"></div>
+        <div class="btmRightCorner"></div>
+        <div class="btmLeftCorner"></div>
+        <div class="topLeftCorner"></div>
+        <div class="scanbar"></div>
+        <p class="webAddress">www.example.com</p>
       </div>
     </div>
 
@@ -146,8 +186,15 @@
         </div>
       </div>
       <div class="back">
-        <img src="assets/images/pho.png"/>
-        <p>www.example.com</p>
+        <p class="scanInstructions">Scan here for directions</p>
+        <div class="codeBorder"></div>
+        <img class="QRcode" src="assets/images/pho.png"/>
+        <div class="topRightCorner"></div>
+        <div class="btmRightCorner"></div>
+        <div class="btmLeftCorner"></div>
+        <div class="topLeftCorner"></div>
+        <div class="scanbar"></div>
+        <p class="webAddress">www.example.com</p>
       </div>
     </div>
   </div>
@@ -159,7 +206,9 @@
   
   <div class="mapArea">
     
-    <google-map center="Toronto"></google-map>
+    <google-map disableDefaultUI draggable="false" latitude="43.6366829" longitude="-79.4001831" zoom="14" fitToMarkers>
+    <!-- <google-map-marker latitude="43.6366829" longitude="-79.4001831"></google-map-marker> -->
+    </google-map>
     <google-map-directions startAddress="600 Fleet Street, Toronto"
                             endAddress=""
                             travelMode="WALKING">
