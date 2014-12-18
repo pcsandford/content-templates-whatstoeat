@@ -54,10 +54,10 @@
         <p class="scanInstructions">Scan here for directions</p>
         <div class="codeBorder"></div>
         <img class="QRcode" src="assets/images/gusto101.png"/>
-        <div class="topRightCorner"></div>
-        <div class="btmRightCorner"></div>
-        <div class="btmLeftCorner"></div>
-        <div class="topLeftCorner"></div>
+        <div class="focus topRightCorner"></div>
+        <div class="focus btmRightCorner"></div>
+        <div class="focus btmLeftCorner"></div>
+        <div class="focus topLeftCorner"></div>
         <div class="scanbar"></div>
         <p class="webAddress">www.example.com</p>
       </div>
@@ -81,10 +81,10 @@
         <p class="scanInstructions">Scan here for directions</p>
         <div class="codeBorder"></div>
         <img class="QRcode" src="assets/images/aroma.png"/>
-        <div class="topRightCorner"></div>
-        <div class="btmRightCorner"></div>
-        <div class="btmLeftCorner"></div>
-        <div class="topLeftCorner"></div>
+        <div class="focus topRightCorner"></div>
+        <div class="focus btmRightCorner"></div>
+        <div class="focus btmLeftCorner"></div>
+        <div class="focus topLeftCorner"></div>
         <div class="scanbar"></div>
         <p class="webAddress">www.example.com</p>
       </div>
@@ -108,10 +108,10 @@
         <p class="scanInstructions">Scan here for directions</p>
         <div class="codeBorder"></div>
         <img class="QRcode" src="assets/images/pandl.png"/>
-        <div class="topRightCorner"></div>
-        <div class="btmRightCorner"></div>
-        <div class="btmLeftCorner"></div>
-        <div class="topLeftCorner"></div>
+        <div class="focus topRightCorner"></div>
+        <div class="focus btmRightCorner"></div>
+        <div class="focus btmLeftCorner"></div>
+        <div class="focus topLeftCorner"></div>
         <div class="scanbar"></div>
         <p class="webAddress">www.example.com</p>
       </div>
@@ -135,10 +135,10 @@
         <p class="scanInstructions">Scan here for directions</p>
         <div class="codeBorder"></div>
         <img class="QRcode" src="assets/images/legourmand.png"/>
-        <div class="topRightCorner"></div>
-        <div class="btmRightCorner"></div>
-        <div class="btmLeftCorner"></div>
-        <div class="topLeftCorner"></div>
+        <div class="focus topRightCorner"></div>
+        <div class="focus btmRightCorner"></div>
+        <div class="focus btmLeftCorner"></div>
+        <div class="focus topLeftCorner"></div>
         <div class="scanbar"></div>
         <p class="webAddress">www.example.com</p>
       </div>
@@ -162,10 +162,10 @@
         <p class="scanInstructions">Scan here for directions</p>
         <div class="codeBorder"></div>
         <img class="QRcode" src="assets/images/tone.png"/>
-        <div class="topRightCorner"></div>
-        <div class="btmRightCorner"></div>
-        <div class="btmLeftCorner"></div>
-        <div class="topLeftCorner"></div>
+        <div class="focus topRightCorner"></div>
+        <div class="focus btmRightCorner"></div>
+        <div class="focus btmLeftCorner"></div>
+        <div class="focus topLeftCorner"></div>
         <div class="scanbar"></div>
         <p class="webAddress">www.example.com</p>
       </div>
@@ -189,10 +189,10 @@
         <p class="scanInstructions">Scan here for directions</p>
         <div class="codeBorder"></div>
         <img class="QRcode" src="assets/images/pho.png"/>
-        <div class="topRightCorner"></div>
-        <div class="btmRightCorner"></div>
-        <div class="btmLeftCorner"></div>
-        <div class="topLeftCorner"></div>
+        <div class="focus topRightCorner"></div>
+        <div class="focus btmRightCorner"></div>
+        <div class="focus btmLeftCorner"></div>
+        <div class="focus topLeftCorner"></div>
         <div class="scanbar"></div>
         <p class="webAddress">www.example.com</p>
       </div>
@@ -206,15 +206,21 @@
   
   <div class="mapArea">
     
-    <google-map disableDefaultUI draggable="false" latitude="43.6366829" longitude="-79.4001831" zoom="14" fitToMarkers>
-    <!-- <google-map-marker latitude="43.6366829" longitude="-79.4001831"></google-map-marker> -->
+    <google-map disableDefaultUI draggable="false" latitude="43.6366829" longitude="-79.4001831" zoom="16">
+      <google-map-marker latitude="43.6366829" longitude="-79.4001831"
+      icon="assets/images/marker.svg">
+      </google-map-marker>
     </google-map>
-    <google-map-directions startAddress="600 Fleet Street, Toronto"
-                            endAddress=""
-                            travelMode="WALKING">
+    <google-map-directions startAddress="600 Fleet Street, Toronto" endAddress="" travelMode="WALKING">
     </google-map-directions>
 
   </div>
+  <a href="https://github.com/pcsandford/content-template-whatstoeat" target="_blank">
+    <div class="gitHubWatermark"></div>
+  </a>
+  <a href="http://cameroncodes.com" target="_blank">
+    <div class="cameronCodesWatermark"></div>
+  </a>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="script.js"></script>
