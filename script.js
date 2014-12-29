@@ -1,23 +1,5 @@
 $(document).ready(function(){
 
-//google sheets
-
-// var sheet = document.querySelector('#sheet');
-
-// sheet.addEventListener('google-sheet-data', function(e) {
-//   switch (e.detail.type) {
-//     case 'rows':
-//       document.querySelector('#rows').model = this;
-//     break;
-//     default:
-//     break;
-//   }
-// });
-
-// sheet.addEventListener('core-error', function(e) {
-//   alert(e.detail.response);
-// });
-
 //google maps
 
 var gMap = document.querySelector('google-map');
@@ -27,7 +9,8 @@ var gMap = document.querySelector('google-map');
 
 
 
-  
+
+
 //heart animation 
 
 $('.heartArea').on('click',function(){

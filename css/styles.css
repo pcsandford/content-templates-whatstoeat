@@ -220,35 +220,35 @@ body {
 @-webkit-keyframes scan {
   0% {
     opacity: 0;
-    bottom: 5px; }
+    bottom: 10%; }
   3% {
     opacity: 1;
-    bottom: 5px; }
+    bottom: 10%; }
   19% {
     opacity: 1;
-    bottom: 170px; }
+    bottom: 80%; }
   22% {
     opacity: 0;
-    bottom: 170px; }
+    bottom: 80%; }
   100% {
     opacity: 0;
-    bottom: 5px; } }
+    bottom: 10%; } }
 @keyframes scan {
   0% {
     opacity: 0;
-    bottom: 5px; }
+    bottom: 10%; }
   3% {
     opacity: 1;
-    bottom: 5px; }
+    bottom: 10%; }
   19% {
     opacity: 1;
-    bottom: 170px; }
+    bottom: 80%; }
   22% {
     opacity: 0;
-    bottom: 170px; }
+    bottom: 80%; }
   100% {
     opacity: 0;
-    bottom: 5px; } }
+    bottom: 10%; } }
 @-webkit-keyframes touchEffect {
   20% {
     box-shadow: 0 0 0 0.6vh rgba(82, 179, 217, 0.3); }
@@ -287,7 +287,9 @@ body {
     left: 0;
     top: 0;
     opacity: 1;
-    z-index: -1; }
+    z-index: -1;
+    -webkit-animation: background1Clear 40s ease-in-out infinite;
+            animation: background1Clear 40s ease-in-out infinite; }
   .wrapper .background2 {
     width: 100vw;
     height: 100vh;
@@ -297,7 +299,9 @@ body {
     left: 0;
     top: 0;
     opacity: 0;
-    z-index: -2; }
+    z-index: -2;
+    -webkit-animation: background2Clear 40s ease-in-out infinite;
+            animation: background2Clear 40s ease-in-out infinite; }
   .wrapper .background3 {
     width: 100vw;
     height: 100vh;
@@ -307,7 +311,9 @@ body {
     left: 0;
     top: 0;
     opacity: 0;
-    z-index: -3; }
+    z-index: -3;
+    -webkit-animation: background3Clear 40s ease-in-out infinite;
+            animation: background3Clear 40s ease-in-out infinite; }
   .wrapper .background4 {
     width: 100vw;
     height: 100vh;
@@ -317,7 +323,9 @@ body {
     left: 0;
     top: 0;
     opacity: 0;
-    z-index: -4; }
+    z-index: -4;
+    -webkit-animation: background4Clear 40s ease-in-out infinite;
+            animation: background4Clear 40s ease-in-out infinite; }
   .wrapper .background5 {
     width: 100vw;
     height: 100vh;
@@ -428,7 +436,7 @@ body {
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
               transform: translateX(-50%);
-      bottom: 35px;
+      bottom: 10%;
       background: #E74C3C;
       z-index: 30;
       -webkit-animation: scan 7s ease-in-out infinite;
@@ -567,10 +575,10 @@ body {
       font-size: 2.5vw; }
   .wrapper .mapArea {
     width: 45vw;
-    height: 57.5vh;
+    height: 58vh;
     position: absolute;
     right: 1vw;
-    top: 26vh;
+    top: 23vh;
     overflow: hidden;
     border-radius: 5px; }
     .wrapper .mapArea google-map {
@@ -580,6 +588,17 @@ body {
       left: 0;
       top: 0;
       border-radius: 5px; }
+  .wrapper .companyLogo {
+    width: 30vw;
+    height: 10vw;
+    position: absolute;
+    background: url(../assets/images/companyLogo.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30vw 8vw;
+    bottom: 1vh;
+    right: 0.5vw;
+    opacity: 1; }
   .wrapper .gitHubWatermark {
     width: 5vw;
     height: 5vw;
@@ -588,8 +607,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 5vw 5vw;
-    bottom: 10px;
-    right: 20px;
+    bottom: 5vh;
+    right: 34vw;
     opacity: 0.5; }
   .wrapper .cameronCodesWatermark {
     width: 5vw;
@@ -599,73 +618,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 5vw 5vw;
-    bottom: 10px;
-    right: 200px;
+    bottom: 5vh;
+    right: 27vw;
     opacity: 0.5; }
-
-@media screen and (min-width: 1746px) {
-  @-webkit-keyframes scan {
-    0% {
-      opacity: 0;
-      bottom: 35px; }
-    3% {
-      opacity: 1;
-      bottom: 35px; }
-    19% {
-      opacity: 1;
-      bottom: 330px; }
-    22% {
-      opacity: 0;
-      bottom: 330px; }
-    100% {
-      opacity: 0;
-      bottom: 35px; } }
-  @keyframes scan {
-    0% {
-      opacity: 0;
-      bottom: 35px; }
-    3% {
-      opacity: 1;
-      bottom: 35px; }
-    19% {
-      opacity: 1;
-      bottom: 330px; }
-    22% {
-      opacity: 0;
-      bottom: 330px; }
-    100% {
-      opacity: 0;
-      bottom: 35px; } } }
-@media screen and (min-width: 3840px) {
-  @-webkit-keyframes scan {
-    0% {
-      opacity: 0;
-      bottom: 35px; }
-    3% {
-      opacity: 1;
-      bottom: 35px; }
-    19% {
-      opacity: 1;
-      bottom: 330px; }
-    22% {
-      opacity: 0;
-      bottom: 330px; }
-    100% {
-      opacity: 0;
-      bottom: 35px; } }
-  @keyframes scan {
-    0% {
-      opacity: 0;
-      bottom: 35px; }
-    3% {
-      opacity: 1;
-      bottom: 35px; }
-    19% {
-      opacity: 1;
-      bottom: 330px; }
-    22% {
-      opacity: 0;
-      bottom: 330px; }
-    100% {
-      opacity: 0;
-      bottom: 35px; } } }
