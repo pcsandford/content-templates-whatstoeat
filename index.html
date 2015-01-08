@@ -21,11 +21,6 @@
   <link rel="stylesheet" href="css/styles.css"/>
   <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato:700,900' rel='stylesheet' type='text/css'>
-  <!--Web Components-->    
-  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
-  <link rel="import" href="bower_components/google-map/google-map.html"/>
-  <link rel="import" href="bower_components/google-map/google-map-directions.html">
-  <link rel="import" href="bower_components/polymer/polymer.html"/>
 </head>
 
 <div class="wrapper">
@@ -36,7 +31,7 @@
 
   <div class="cardArea">
 
-  
+ <div class="card1holder">
     <div class="card card1">
       <div class="front">
         <div class="heartArea"></div>
@@ -54,16 +49,18 @@
       <div class="back">
         <p class="scanInstructions">Scan here for directions</p>
         <div class="codeBorder"></div>
-        <img class="QRcode" src="assets/images/gusto101.png"/>
+        <img class="QRcode code1" src="assets/images/gusto101test.png"/>
         <div class="focus topRightCorner"></div>
         <div class="focus btmRightCorner"></div>
         <div class="focus btmLeftCorner"></div>
         <div class="focus topLeftCorner"></div>
         <div class="scanbar"></div>
-        <p class="webAddress">www.example.com</p>
+        <p class="webAddress">gusto101.squarespace.com</p>
       </div>
     </div>
-
+    </div>
+  
+  <div class="card2holder">
     <div class="card card2">
       <div class="front">
         <div class="heartArea"></div>
@@ -81,16 +78,18 @@
       <div class="back">
         <p class="scanInstructions">Scan here for directions</p>
         <div class="codeBorder"></div>
-        <img class="QRcode" src="assets/images/aroma.png"/>
+        <img class="QRcode code2" src="assets/images/aroma.png"/>
         <div class="focus topRightCorner"></div>
         <div class="focus btmRightCorner"></div>
         <div class="focus btmLeftCorner"></div>
         <div class="focus topLeftCorner"></div>
         <div class="scanbar"></div>
-        <p class="webAddress">www.example.com</p>
+        <p class="webAddress">aroma.ca</p>
       </div>
     </div>
-
+    </div>
+  
+  <div class="card3holder">
     <div class="card card3">
       <div class="front">
         <div class="heartArea"></div>
@@ -108,16 +107,18 @@
       <div class="back">
         <p class="scanInstructions">Scan here for directions</p>
         <div class="codeBorder"></div>
-        <img class="QRcode" src="assets/images/pandl.png"/>
+        <img class="QRcode code3" src="assets/images/pandl.png"/>
         <div class="focus topRightCorner"></div>
         <div class="focus btmRightCorner"></div>
         <div class="focus btmLeftCorner"></div>
         <div class="focus topLeftCorner"></div>
         <div class="scanbar"></div>
-        <p class="webAddress">www.example.com</p>
+        <p class="webAddress">thepnlburger.ca</p>
       </div>
     </div>
-
+  </div>
+  
+  <div class="card4holder">
     <div class="card card4">
       <div class="front">
         <div class="heartArea"></div>
@@ -135,16 +136,18 @@
       <div class="back">
         <p class="scanInstructions">Scan here for directions</p>
         <div class="codeBorder"></div>
-        <img class="QRcode" src="assets/images/legourmand.png"/>
+        <img class="QRcode code4" src="assets/images/legourmand.png"/>
         <div class="focus topRightCorner"></div>
         <div class="focus btmRightCorner"></div>
         <div class="focus btmLeftCorner"></div>
         <div class="focus topLeftCorner"></div>
         <div class="scanbar"></div>
-        <p class="webAddress">www.example.com</p>
+        <p class="webAddress">legourmand.ca</p>
       </div>
     </div>
+  </div>
 
+  <div class="card5holder">
     <div class="card card5">
       <div class="front">
         <div class="heartArea"></div>
@@ -162,42 +165,45 @@
       <div class="back">
         <p class="scanInstructions">Scan here for directions</p>
         <div class="codeBorder"></div>
-        <img class="QRcode" src="assets/images/tone.png"/>
+        <img class="QRcode code5" src="assets/images/tone.png"/>
         <div class="focus topRightCorner"></div>
         <div class="focus btmRightCorner"></div>
         <div class="focus btmLeftCorner"></div>
         <div class="focus topLeftCorner"></div>
         <div class="scanbar"></div>
-        <p class="webAddress">www.example.com</p>
+        <p class="webAddress">tonesushi.com</p>
       </div>
     </div>
-
+  </div>
+  
+  <div class="card6holder">
     <div class="card card6">
       <div class="front">
         <div class="heartArea"></div>
         <div class="imageArea"></div>
         <div class="name">
-          <p>Pho Aimy</p>
+          <p>Pho Hung</p>
         </div>
         <div class="type">
           <p>Vietnamese </p>
         </div>
         <div class="location">
-          <p>221 Spadina Ave</p>
+          <p>350 Spadina Ave</p>
         </div>
       </div>
       <div class="back">
         <p class="scanInstructions">Scan here for directions</p>
         <div class="codeBorder"></div>
-        <img class="QRcode" src="assets/images/pho.png"/>
+        <img class="QRcode code6" src="assets/images/pho.png"/>
         <div class="focus topRightCorner"></div>
         <div class="focus btmRightCorner"></div>
         <div class="focus btmLeftCorner"></div>
         <div class="focus topLeftCorner"></div>
         <div class="scanbar"></div>
-        <p class="webAddress">www.example.com</p>
+        <p class="webAddress">phohung.ca</p>
       </div>
     </div>
+  </div>
 
             </template>
 
@@ -209,23 +215,17 @@
   </div>
 
   <div class="cardInstructions">
-    <h2>Touch an image for directions</h2> 
+    <h2>Touch a card for directions</h2> 
     <h2>Touch a heart to favourite</h2>
   </div>
   
   <div class="mapArea">
     
-    <google-map disableDefaultUI draggable="false" latitude="43.6366829" longitude="-79.4001831" zoom="16">
-      <google-map-marker latitude="43.6366829" longitude="-79.4001831"
-      icon="assets/images/marker.svg">
-      </google-map-marker>
-    </google-map>
-    <google-map-directions startAddress="600 Fleet Street, Toronto" endAddress="" travelMode="WALKING">
-    </google-map-directions>
+    <div id="map-canvas"></div>
 
   </div>
-  <div class="companyLogo"></div>
-  <a href="https://github.com/pcsandford/content-template-whatstoeat" target="_blank">
+ 
+  <a href="https://github.com/pcsandford/content-templates-whatstoeat" target="_blank">
     <div class="gitHubWatermark"></div>
   </a>
   <a href="http://cameroncodes.com" target="_blank">
@@ -233,4 +233,5 @@
   </a>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD88q6kmwM9hImRwnvwD908QufzLmu2waM&sensor=true"></script>
 <script src="script.js"></script>
