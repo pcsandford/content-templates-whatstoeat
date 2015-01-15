@@ -142,67 +142,21 @@ body {
   font-family: "Quicksand", "Lato", sans-serif;
   color: #2C3E50; }
 
-@-webkit-keyframes background1Clear {
+@-webkit-keyframes backgroundAnimation {
   0% {
-    opacity: 1; }
-  25% {
-    opacity: 0; }
-  80% {
-    opacity: 1; }
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
   100% {
-    opacity: 1; } }
+    background-position: 0% 50%; } }
 
-@keyframes background1Clear {
+@keyframes backgroundAnimation {
   0% {
-    opacity: 1; }
-  25% {
-    opacity: 0; }
-  80% {
-    opacity: 1; }
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
   100% {
-    opacity: 1; } }
-@-webkit-keyframes background2Clear {
-  0% {
-    opacity: 1; }
-  35% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@keyframes background2Clear {
-  0% {
-    opacity: 1; }
-  35% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@-webkit-keyframes background3Clear {
-  0% {
-    opacity: 1; }
-  55% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@keyframes background3Clear {
-  0% {
-    opacity: 1; }
-  55% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@-webkit-keyframes background4Clear {
-  0% {
-    opacity: 1; }
-  75% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@keyframes background4Clear {
-  0% {
-    opacity: 1; }
-  75% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
+    background-position: 0% 50%; } }
 @-webkit-keyframes focus {
   0% {
     opacity: 1; }
@@ -274,68 +228,16 @@ body {
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background: transparent;
   position: relative;
   opacity: 1;
-  z-index: 0; }
-  .wrapper .background1 {
-    width: 100vw;
-    height: 100vh;
-    background: -webkit-radial-gradient(#063752, #52B3D9);
-    background: radial-gradient(#063752, #52B3D9);
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 1;
-    z-index: -1;
-    -webkit-animation: background1Clear 40s ease-in-out infinite;
-            animation: background1Clear 40s ease-in-out infinite; }
-  .wrapper .background2 {
-    width: 100vw;
-    height: 100vh;
-    background: -webkit-radial-gradient(#361B4E, #BE90D4);
-    background: radial-gradient(#361B4E, #BE90D4);
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    z-index: -2;
-    -webkit-animation: background2Clear 40s ease-in-out infinite;
-            animation: background2Clear 40s ease-in-out infinite; }
-  .wrapper .background3 {
-    width: 100vw;
-    height: 100vh;
-    background: -webkit-radial-gradient(#460D08, #E74C3C);
-    background: radial-gradient(#460D08, #E74C3C);
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    z-index: -3;
-    -webkit-animation: background3Clear 40s ease-in-out infinite;
-            animation: background3Clear 40s ease-in-out infinite; }
-  .wrapper .background4 {
-    width: 100vw;
-    height: 100vh;
-    background: -webkit-radial-gradient(#532A09, #EB974E);
-    background: radial-gradient(#532A09, #EB974E);
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    z-index: -4;
-    -webkit-animation: background4Clear 40s ease-in-out infinite;
-            animation: background4Clear 40s ease-in-out infinite; }
-  .wrapper .background5 {
-    width: 100vw;
-    height: 100vh;
-    background: -webkit-radial-gradient(#063752, #52B3D9);
-    background: radial-gradient(#063752, #52B3D9);
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 1;
-    z-index: -5; }
+  z-index: 0;
+  background: -webkit-linear-gradient(180deg, #8E44AD, #81CFE0);
+  background: linear-gradient(270deg, #8E44AD, #81CFE0);
+  -webkit-animation: backgroundAnimation 30s ease infinite;
+          animation: backgroundAnimation 30s ease infinite;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  background-size: 400% 400%; }
   .wrapper h1 {
     color: white;
     font-family: "Lato";
@@ -352,7 +254,6 @@ body {
       height: 28vh;
       background: #fff;
       float: left;
-      margin: 1vh 1.3vw;
       z-index: 5;
       text-align: center;
       position: relative;
@@ -362,7 +263,9 @@ body {
       -webkit-transition: -webkit-transform 2s;
       transition: transform 2s;
       -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d; }
+      transform-style: preserve-3d;
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0); }
     .wrapper .cardArea .flipped {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
@@ -453,11 +356,12 @@ body {
       position: absolute;
       left: 50%;
       bottom: 3%;
-      font-size: 1.2vw;
+      font-size: 1.1vw;
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
               transform: translateX(-50%);
-      font-weight: 300; }
+      font-weight: 300;
+      z-index: 20; }
     .wrapper .cardArea p {
       margin: 0; }
     .wrapper .cardArea .heartArea {
@@ -501,6 +405,11 @@ body {
     .wrapper .cardArea .touched {
       -webkit-animation: touchEffect .8s linear;
               animation: touchEffect .8s linear; }
+    .wrapper .cardArea .card1holder {
+      width: 15vw;
+      height: 28vh;
+      float: left;
+      margin: 1vh 1.3vw; }
     .wrapper .cardArea .card1 .imageArea {
       width: 9vw;
       height: 9vw;
@@ -511,6 +420,11 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       background-size: 9vw 9vw; }
+    .wrapper .cardArea .card2holder {
+      width: 15vw;
+      height: 28vh;
+      float: left;
+      margin: 1vh 1.3vw; }
     .wrapper .cardArea .card2 .imageArea {
       width: 9vw;
       height: 9vw;
@@ -521,6 +435,11 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       background-size: 9vw 9vw; }
+    .wrapper .cardArea .card3holder {
+      width: 15vw;
+      height: 28vh;
+      float: left;
+      margin: 1vh 1.3vw; }
     .wrapper .cardArea .card3 .imageArea {
       width: 9vw;
       height: 9vw;
@@ -531,6 +450,11 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       background-size: 9vw 9vw; }
+    .wrapper .cardArea .card4holder {
+      width: 15vw;
+      height: 28vh;
+      float: left;
+      margin: 1vh 1.3vw; }
     .wrapper .cardArea .card4 .imageArea {
       width: 9vw;
       height: 9vw;
@@ -541,6 +465,11 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       background-size: 9vw 9vw; }
+    .wrapper .cardArea .card5holder {
+      width: 15vw;
+      height: 28vh;
+      float: left;
+      margin: 1vh 1.3vw; }
     .wrapper .cardArea .card5 .imageArea {
       width: 9vw;
       height: 9vw;
@@ -551,6 +480,11 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       background-size: 9vw 9vw; }
+    .wrapper .cardArea .card6holder {
+      width: 15vw;
+      height: 28vh;
+      float: left;
+      margin: 1vh 1.3vw; }
     .wrapper .cardArea .card6 .imageArea {
       width: 9vw;
       height: 9vw;
@@ -577,47 +511,37 @@ body {
     width: 45vw;
     height: 58vh;
     position: absolute;
+    background: #fff;
     right: 1vw;
-    top: 23vh;
+    margin-top: 0.6%;
     overflow: hidden;
     border-radius: 5px; }
-    .wrapper .mapArea google-map {
-      width: 100%;
-      height: 100%;
+    .wrapper .mapArea #map-canvas {
+      width: 96%;
+      height: 96%;
       position: absolute;
-      left: 0;
-      top: 0;
+      left: 2%;
+      top: 2%;
       border-radius: 5px; }
-  .wrapper .companyLogo {
-    width: 30vw;
-    height: 10vw;
-    position: absolute;
-    background: url(../assets/images/companyLogo.svg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 30vw 8vw;
-    bottom: 1vh;
-    right: 0.5vw;
-    opacity: 1; }
   .wrapper .gitHubWatermark {
-    width: 5vw;
-    height: 5vw;
+    width: 3vw;
+    height: 3vw;
     position: absolute;
     background: url(../assets/images/githubWatermark.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 5vw 5vw;
+    background-size: 3vw 3vw;
     bottom: 5vh;
-    right: 34vw;
+    right: 4vw;
     opacity: 0.5; }
   .wrapper .cameronCodesWatermark {
-    width: 5vw;
-    height: 5vw;
+    width: 3vw;
+    height: 3vw;
     position: absolute;
     background: url(../assets/images/watermarkCC.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 5vw 5vw;
+    background-size: 3vw 3vw;
     bottom: 5vh;
-    right: 27vw;
+    right: 10vw;
     opacity: 0.5; }
