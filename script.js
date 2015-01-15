@@ -31,24 +31,7 @@ function initialize() {
   map: map,
   icon:'assets/images/marker.svg'
  })
-
- var testMarkerPoint = new google.maps.LatLng(43.6366829, -79.4221831);
-var testmarker = new google.maps.Marker({
-  position:testMarkerPoint,
-  map: map,
-  icon:'button_brolly.png'
- })
-testmarker.setVisible(false);
-
-$('.testCard').on('click',function(){
-  testmarker.setVisible(true);
-})
-
-$('.resetButton').on('click',function(){
-  testmarker.setVisible(false);
-  });
-
-
+ 
 
 var gusto101 = "101 Portland Street, Toronto";
 var aroma = "535 Queen Street West, Toronto";

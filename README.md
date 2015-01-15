@@ -85,40 +85,21 @@ In order to generate the QR codes to send directions to the user, please either 
 
 ### Changing the Area of the Map
 
-To change the area that the map covers, please locate the following lines of code in the index.html file, and all instances in the script.js file and change the longitude and latitude coordinates accordingly. Theses values can be found in the URL on the Google maps page for your location.
+To change the area that the map covers, please locate the following lines of code in the script.js file and change the longitude and latitude coordinates accordingly. Theses values can be found in the URL on the Google maps page for your location.
 
- ```<google-map disableDefaultUI draggable="false" latitude="43.6366829" longitude="-79.4001831" zoom="16">```
-
-```setTimeout(function() {
-  document.querySelector('google-map').latitude= 43.6366829;
-  document.querySelector('google-map').longitude= -79.4001831;
-  },8000);```
-  
-### Changing the Location of the 'You Are Here' marker
-
-To change the location of the 'You Are Here' marker, please locate the following lines of code in the index.html file and change the longitude and latitude coordinates accordingly. Theses values can be found in the URL on the Google maps page for your location.
-
-```<google-map-marker latitude="43.6366829" longitude="-79.4001831"
-      icon="assets/images/marker.svg">```
+ ```var startPoint = new google.maps.LatLng(43.6366829, -79.4001831);```
 
 ### Changing the Directions to the Restaurants
 
-To change the directions to the restaurants that is displayed on the Google map when the user touches the corresponding card, please locate the following code in the script.js file, and replace the address as required.
+To change the directions to the restaurants that is displayed on the Google map when the user touches the corresponding card, please locate the following code in the script.js file, and replace the addresses as required.
 
-```$('.card1 .imageArea').on('click',function(){
-
-	document.querySelector('google-map-directions').endAddress = "101 Portland Street, Toronto";```
-
-### Changing the Company Logo
-
-To change the logo image, please locate the following line of code in the idex.html file. You can then
-delete the information between the quotation marks following the src tag and replace with the file path to your own logo image.
-
-```.wrapper .companyLogo {
-    width: 30vw;
-    height: 10vw;
-    position: absolute;
-    background: url(../assets/images/companyLogo.svg);```
+```var gusto101 = "101 Portland Street, Toronto";
+var aroma = "535 Queen Street West, Toronto";
+var pandl = "507 Queen Street West, Toronto";
+var leGourmand = "152 Spadina Avenue, Toronto";
+var tone = "414 Queen Street West, Toronto";
+var phoHung = "350 Spadina Avenue, Toronto"; 
+var resetDestination = "600 Fleet Street, Toronto";```
 
 ### Removing the Watermarks 
 
